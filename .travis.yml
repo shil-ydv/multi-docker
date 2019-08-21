@@ -10,6 +10,7 @@ script:
 
 after_success:
   - docker build -t 1942/multi-client ./client
+  - docker build -t 1942/multi-nginx ./nginx
   - docker build -t 1942/multi-server ./server
   - docker build -t 1942/multi-worker ./worker
 
